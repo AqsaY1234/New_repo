@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+    //     var a = 0;
+    //     var num = 0;
+    
+    //     while (a <= 15)
+    // {
+    //     num = num + a;
+    //     a = a + 1;
+    // }
+    // alert("Values of first 15 numbers are: " + num);
+    </script> -->
+
+    <h1>WHILE LOOP</h1>
+    <div id = "abc"></div>
+    <script type="text/javascript">
+        let output = document.getElementById("abc");
+        var count = 0;
+        output.innerHTML += "Loop is started <br>";
+        while (count <= 30)
+        {
+            output.innerHTML += "My Value is : " + count + "<br>";
+            count++;
+        } 
+        output.innerHTML += "Loop is stopped";
+    </script>
+<h1>DO-WHILE LOOP</h1>
+    <div id="output"></div>
+    <script type="text/javascript">
+        let pro = document.getElementById("output");
+        var count = 0;
+        pro.innerHTML += "Starting Loop" + "<br />";
+        do {
+            pro.innerHTML += "Current Count : " + count + "<br />";
+            count++;
+        }
+        while (count < 15);
+        pro.innerHTML += "Loop stopped!";
+    </script>
+<h1>For Loop</h1>
+<div id = "abcdd"></div>
+<script type = "text/javascript">
+    const foor = document.getElementById("abcdd")
+    foor.innerHTML = "for loop is starting towards <br>";
+    let value;
+    for(let value = 0; value <15; value++)
+    {
+        foor.innerHTML += "This is " + value + "<br>";
+    } 
+    foor.innerHTML += "for loop is stopped";
+
+</script>
+</body>
+</html>
